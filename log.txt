@@ -1,0 +1,40 @@
+Error on line 4 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\Controller\HotelController.java:4: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.GetMapping;
+                                              ^
+Error on line 5 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\Controller\HotelController.java:5: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RestController;
+                                              ^
+Error on line 7 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\Controller\HotelController.java:7: error: cannot find symbol
+@RestController("/hotelService")
+ ^
+  symbol: class RestController
+Error on line 3 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\ServiceApplication.java:3: error: package org.springframework.boot does not exist
+import org.springframework.boot.SpringApplication;
+                               ^
+Error on line 4 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\ServiceApplication.java:4: error: package org.springframework.boot.autoconfigure does not exist
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+                                             ^
+Error on line 6 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\ServiceApplication.java:6: error: cannot find symbol
+@SpringBootApplication
+ ^
+  symbol: class SpringBootApplication
+Error on line 3 in D:\java practice\Hotel Service\service\src\test\java\com\Hotel\service\ServiceApplicationTests.java:3: error: package org.junit.jupiter.api does not exist
+import org.junit.jupiter.api.Test;
+                            ^
+Error on line 4 in D:\java practice\Hotel Service\service\src\test\java\com\Hotel\service\ServiceApplicationTests.java:4: error: package org.springframework.boot.test.context does not exist
+import org.springframework.boot.test.context.SpringBootTest;
+                                            ^
+Error on line 6 in D:\java practice\Hotel Service\service\src\test\java\com\Hotel\service\ServiceApplicationTests.java:6: error: cannot find symbol
+@SpringBootTest
+ ^
+  symbol: class SpringBootTest
+Error on line 10 in D:\java practice\Hotel Service\service\src\main\java\com\Hotel\service\Controller\HotelController.java:10: error: cannot find symbol
+  @GetMapping("/hotels")
+   ^
+  symbol:   class GetMapping
+  location: class com.Hotel.service.Controller.HotelController
+Error on line 9 in D:\java practice\Hotel Service\service\src\test\java\com\Hotel\service\ServiceApplicationTests.java:9: error: cannot find symbol
+	@Test
+	 ^
+  symbol:   class Test
+  location: class com.Hotel.service.ServiceApplicationTests
