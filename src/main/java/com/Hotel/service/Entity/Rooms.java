@@ -19,14 +19,13 @@ public class Rooms {
     private Integer id;
     private String type;
     private Integer price;
-    private Boolean availability;
+    private Boolean availability = false;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "hotel_id")
     @JsonBackReference
     private Hotel hotel;
     // you can provide refernce to the parent table which primary key it should point but by default it will look for id.
-
 
 
 }

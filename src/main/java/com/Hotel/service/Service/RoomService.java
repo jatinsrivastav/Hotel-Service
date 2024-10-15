@@ -52,4 +52,24 @@ public class RoomService {
         roomRepo.deleteById(roomId);
 
     }
+
+    public Rooms getroombyHotelId(Integer hotelId, Integer roomId) {
+        Hotel hotel = hotelRepo.findById(hotelId).orElseThrow(() -> new EntityNotFoundException("didn't find hotel"));
+        Rooms room = roomRepo.findById(roomId).orElseThrow(() -> new EntityNotFoundException("didn't find room"));
+
+        if (!hotel.getId().equals(room.getHotel().getId())) {
+            throw new IllegalArgumentException("didn't match hotel with room");
+        }
+       return room;
+    }
+
+    public Hotel getHotelRoomDetails(Integer hotelId, Integer roomId) {
+        Hotel hotel = hotelRepo.findById(hotelId).orElseThrow(() -> new EntityNotFoundException("didn't find hotel"));
+        Rooms room = roomRepo.findById(roomId).orElseThrow(() -> new EntityNotFoundException("didn't find room"));
+
+        if (!hotel.getId().equals(room.getHotel().getId())) {
+            throw new IllegalArgumentException("didn't match hotel with room");
+        }
+        return hotel;
+    }
 }

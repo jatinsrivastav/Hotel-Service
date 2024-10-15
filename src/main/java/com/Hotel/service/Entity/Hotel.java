@@ -22,7 +22,7 @@ public class Hotel {
     private String city;
 
     // if you put persist then it will not delete the old data while adding the rooms.
-    @OneToMany(mappedBy = "hotel",cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "hotel",cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<Rooms> rooms;
 
